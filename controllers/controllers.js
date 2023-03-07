@@ -3,11 +3,10 @@ const Phone = require('../models/phone')
 
 exports.addPhone = async(req,res) => {
     try {
-        const {name,model,status,warranty, accessories, battery} = req.body
+        const {name,model,warranty, accessories, battery} = req.body
         await Phone.create({
             name,
             model,
-            status,
             warranty,
             accessories,
             battery,

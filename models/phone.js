@@ -4,7 +4,7 @@ const phoneSchema = new mongoose.Schema({
     name: String,
     model: String,
     condition: String,
-    warranty: Date,
+    warranty: String,
     accessories: String,
     battery: String,
     category: String
